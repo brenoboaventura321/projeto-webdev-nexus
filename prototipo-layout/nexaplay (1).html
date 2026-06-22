@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>NexaPlay</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#">
+    <img src="logo.png" alt="NexaPlay">
+    NexaPlay
+  </a>
+  <ul>
+    <li><a href="#" class="on">Home</a></li>
+    <li><a href="#">Contatos</a></li>
+    <li><a href="#">Ofertas</a></li>
+    <li><a href="#">Sobre</a></li>
+  </ul>
+  <div class="nav-r">
+    <button class="icon-btn" id="themeBtn">🌙</button>
+  </div>
+</nav>
+
+<div class="main">
+  <div class="catalog" id="catalog">
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="banner-bg"></div>
+      <div class="glow a"></div><div class="glow b"></div>
+      <div class="slide on"><div class="tag">🔥 Em destaque</div><h2>Ofertas da Semana</h2><p>Jogos AAA com até 70% de desconto</p></div>
+      <div class="slide"><div class="tag">⚡ Lançamento</div><h2>Novidades 2026</h2><p>Os títulos mais aguardados já disponíveis</p></div>
+      <div class="slide"><div class="tag">🎮 Exclusivo</div><h2>Bundle Gamer Premium</h2><p>3 jogos + 1 DLC por preço especial</p></div>
+      <button class="arr l" onclick="slide(-1)">‹</button>
+      <button class="arr r" onclick="slide(1)">›</button>
+      <div class="dots"><div class="dot on"></div><div class="dot"></div><div class="dot"></div></div>
+    </div>
+
+    <!-- Destaques -->
+    <div class="sec-hd"><span>Destaques</span><a href="#">Ver todos →</a></div>
+    <div class="grid" id="g1"></div>
+
+    <!-- Lançamentos -->
+    <div class="sec-hd"><span>Lançamentos</span><a href="#">Ver todos →</a></div>
+    <div class="grid" id="g2"></div>
+
+    <!-- Mais Vendidos -->
+    <div class="sec-hd"><span>Mais Vendidos</span><a href="#">Ver todos →</a></div>
+    <div class="grid" id="g3"></div>
+
+  </div>
+
+  <!-- Chat panel -->
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-head">
+      <img src="logo.png" alt="">
+      <span>NexaChat</span>
+      <div class="chat-status">Online</div>
+      <button class="close-btn" onclick="closeChat()">✕</button>
+    </div>
+    <div class="msgs" id="msgs">
+      <div class="msg bot"><div class="bubble">Olá! 👋 Sou a NexaChat. Pergunte sobre qualquer jogo do catálogo, ofertas ou recomendações!</div><span class="ts">agora</span></div>
+    </div>
+    <div class="chips">
+      <button class="chip" onclick="ask('Ofertas do dia?')">🔥 Ofertas</button>
+      <button class="chip" onclick="ask('Jogos de RPG')">⚔️ RPGs</button>
+      <button class="chip" onclick="ask('Lançamentos')">🆕 Lançamentos</button>
+      <button class="chip" onclick="ask('Até R$50')">💰 Até R$50</button>
+    </div>
+    <div class="input-row">
+      <input class="ci" id="ci" type="text" placeholder="Digite aqui..."/>
+      <button class="send" onclick="send()">➤</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Projetado e Desenvolvido por: <strong>NEXUS Development & AI Solutions</strong></span>
+  <span>© 2026 NexaPlay</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

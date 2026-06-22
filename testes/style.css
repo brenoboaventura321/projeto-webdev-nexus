@@ -1,0 +1,201 @@
+:root {
+    --azul: #004aad;
+    --azul-claro: #3fa9f5;
+    --azul-hover-card: #e6f2ff;
+    --verde-whatsapp: #25D366;
+    --branco: #ffffff;
+    --cinza: #e6e6e6;
+    --preto: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cinza);
+}
+
+/* HEADER */
+.cabecalho {
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* HERO */
+.hero {
+    background-image: url("agencia.webp");
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* SEÇÕES */
+.secao {
+    background: var(--branco);
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* SERVIÇOS */
+.container-servicos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.servico {
+    background: var(--cinza);
+    padding: 20px;
+    border-radius: 6px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.servico:hover {
+    background: var(--azul-hover-card);
+    transform: translateY(-5px);
+}
+
+/* BOTÃO WHATSAPP */
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: var(--azul);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-whatsapp:hover {
+    background: var(--verde-whatsapp);
+}
+
+/* FOOTER */
+footer {
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* ======================= */
+/* CHATBOT */
+
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--azul-claro);
+    color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.chat-widget {
+    position: fixed;
+    bottom: 85px;
+    right: 20px;
+    width: 280px;
+    background: var(--branco);
+    border: 2px solid var(--azul);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.usuario {
+    align-self: flex-end;
+    background: var(--azul-claro);
+    color: var(--branco);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.bot {
+    align-self: flex-start;
+    background: var(--cinza);
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.chat-input-area {
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 8px;
+}
+
+.chat-input-area button {
+    background: var(--azul);
+    color: var(--branco);
+    border: none;
+    padding: 8px 12px;
+}
+

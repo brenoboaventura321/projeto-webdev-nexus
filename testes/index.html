@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <h1>Agência Criativa</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Transformamos ideias em experiências digitais</h2>
+            <p>Design e tecnologia para impulsionar sua marca 🚀</p>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- Sobre -->
+        <section id="sobre" class="secao">
+            <h2>Sobre Nós</h2>
+            <p>
+                Somos uma agência especializada em design e desenvolvimento web.
+                Criamos soluções digitais modernas para empresas que desejam crescer no ambiente online.
+            </p>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos" class="secao">
+            <h2>Nossos Serviços</h2>
+
+            <div class="container-servicos">
+
+                <div class="servico">
+                    <h3>Design Gráfico</h3>
+                    <p>Identidade visual e artes digitais.</p>
+                </div>
+
+                <div class="servico">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites institucionais e landing pages.</p>
+                </div>
+
+                <div class="servico">
+                    <h3>Marketing Digital</h3>
+                    <p>Gestão de redes sociais e campanhas online.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="secao contato">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato direto pelo WhatsApp.</p>
+            <a href="#" class="btn-whatsapp">Falar no WhatsApp</a>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Agência Criativa</p>
+    </footer>
+
+    <!-- CHATBOT AQUI-->
+
+    <button id="chat-toggle" class="chat-toggle">💬</button>
+
+    <div id="chat" class="chat-widget hidden">
+
+        <div class="chat-header">
+            <p>Atendimento</p>
+            <button id="fechar">X</button>
+        </div>
+
+        <div id="chat-box" class="chat-box">
+            <div class="bot">Olá! 👋 Como posso ajudar?</div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" id="input" placeholder="Digite sua mensagem...">
+            <button id="enviar">Enviar</button>
+        </div>
+        
+    </div>
+
+</body>
+</html>
